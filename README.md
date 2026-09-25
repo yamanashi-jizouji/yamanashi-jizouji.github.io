@@ -1,0 +1,1 @@
+# jizouji-fujiyoshida.github.io

@@ -1,0 +1,13 @@
+法輪山 地蔵寺 公式サイト Ver.9 公開手順
+
+1. 独自ドメインを決める。
+2. index.html の <head> に canonical と og:url を、取得したURLで追加する。
+3. JSON-LD に url を追加し、image は絶対URLへ変更する。
+4. sitemap.template.xml の YOUR-DOMAIN.example を本番ドメインへ変更し、sitemap.xml に改名する。
+5. robots.txt の末尾に Sitemap: https://本番ドメイン/sitemap.xml を追加する。
+6. サーバーへ全ファイルを公開し、HTTPSを有効にする。
+7. Google Search Consoleでドメイン所有権を確認し、sitemap.xmlを送信する。
+8. Googleビジネスプロフィールの公式サイト欄に本番URLを登録する。
+9. Googleリッチリザルトテスト/URL検査で確認する。
+
+重要: ドメイン決定前に架空URLのcanonicalを入れると逆効果になり得るため、Ver.9では未設定です。

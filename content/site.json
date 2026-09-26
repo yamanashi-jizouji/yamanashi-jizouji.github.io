@@ -1,0 +1,31 @@
+{
+  "notices": [
+    {
+      "date": "2026-09-27",
+      "title": "法輪山 地蔵寺 公式サイトを開設しました",
+      "body": "地蔵寺からのお知らせや行事のご案内を、こちらでお伝えしてまいります。"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/images/hondo.jpg",
+      "title": "本堂",
+      "description": "富士吉田市上吉田の法輪山 地蔵寺。"
+    },
+    {
+      "image": "/images/honzon.jpg",
+      "title": "本尊 延命地蔵菩薩",
+      "description": "本尊・延命地蔵菩薩をお祀りしています。"
+    },
+    {
+      "image": "/images/jizo-do.jpg",
+      "title": "境内のお地蔵さま",
+      "description": "境内の祈りの風景。"
+    },
+    {
+      "image": "/images/keidai.jpg",
+      "title": "境内",
+      "description": "地蔵寺の境内の様子です。"
+    }
+  ]
+}

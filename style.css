@@ -98,3 +98,8 @@
   .brand strong{font-size:31px}
   .brand small{font-size:6.1px;letter-spacing:.045em}
 }
+
+/* Ver.14 お知らせ・ギャラリー */
+.news-section .lead,.gallery-section .lead{color:#666}.news-list{max-width:900px;margin:55px auto 0;border-top:1px solid var(--line)}.news-item{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:28px 4px;border-bottom:1px solid var(--line)}.news-item time{font-family:'Noto Serif JP',serif;color:var(--gold);font-size:14px}.news-item h3{margin:0 0 10px;font-size:20px;letter-spacing:.05em}.news-item p{margin:0;color:#666;line-height:1.9;white-space:pre-line}.gallery-section{background:var(--green);color:#fff}.gallery-section .lead{color:#d7ddd9}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:55px}.gallery-card{margin:0;background:rgba(255,255,255,.06)}.gallery-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.gallery-card figcaption{padding:18px 20px 22px}.gallery-card strong{display:block;font-family:'Noto Serif JP',serif;font-size:18px;margin-bottom:7px}.gallery-card span{font-size:12px;line-height:1.8;color:#d7ddd9}.cms-loading{grid-column:1/-1;text-align:center;color:#777}.gallery-section .cms-loading{color:#d7ddd9}
+@media(max-width:850px){.news-item{grid-template-columns:1fr;gap:8px;padding:22px 2px}.gallery-grid{grid-template-columns:1fr 1fr;gap:12px}.gallery-card figcaption{padding:14px}.gallery-card strong{font-size:15px}}
+@media(max-width:520px){.gallery-grid{grid-template-columns:1fr}}

@@ -1,7 +1,8 @@
 backend:
-  name: github
-  repo: yamanashi-jizouji/yamanashi-jizouji.github.io
+  name: turbo-github
+  turbo_site_id: 2a1ee6ce-86d3-4804-a96d-dc79eac00b9c
   branch: main
+  deploy_status: false
 
 locale: ja
 media_folder: "images/uploads"

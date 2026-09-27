@@ -101,3 +101,45 @@
 
 /* Ver.14 お知らせ・ギャラリー */
 .news-section{background:#f6f2e8}.section-head-row{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.news-list{border-top:1px solid rgba(34,61,49,.18)}.news-item{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:26px 4px;border-bottom:1px solid rgba(34,61,49,.14)}.news-item time{font-family:Georgia,serif;font-size:13px;letter-spacing:.12em;color:#897a5a}.news-item h3{margin:0 0 8px;font-family:'Noto Serif JP',serif;font-size:20px;color:#233d31}.news-item p{margin:0;line-height:1.9;color:#555}.gallery-section{background:#fff}.gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:44px}.gallery-item{margin:0;background:#f7f4ec;overflow:hidden}.gallery-item img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s ease}.gallery-item:hover img{transform:scale(1.025)}.gallery-item figcaption{display:flex;flex-direction:column;gap:6px;padding:18px 20px 21px}.gallery-item strong{font-family:'Noto Serif JP',serif;font-size:18px;color:#233d31}.gallery-item span{font-size:13px;line-height:1.7;color:#777}.content-loading,.content-empty{padding:26px 0;color:#777}@media(max-width:700px){.news-item{grid-template-columns:1fr;gap:7px;padding:20px 2px}.gallery-grid{grid-template-columns:1fr;gap:18px;margin-top:30px}}
+/* ===== 全体の文字を少し太く・読みやすく ===== */
+
+body {
+  font-weight: 600;
+}
+
+/* 本文 */
+p,
+li,
+dd,
+dt,
+figcaption {
+  font-weight: 600;
+}
+
+/* ナビゲーション・ボタン */
+nav a,
+.button,
+.mobile-actions a {
+  font-weight: 700;
+}
+
+/* 見出し */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+/* 寺号 */
+.brand strong {
+  font-weight: 700;
+}
+
+/* 小さな文字も少し読みやすく */
+.eyebrow,
+.brand span,
+.brand small,
+.hero-priests {
+  font-weight: 600;
+}

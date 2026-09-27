@@ -1,0 +1,15 @@
+{
+  "news": [
+    {
+      "date": "2026-09-27",
+      "title": "公式サイトを開設しました",
+      "body": "法輪山 地蔵寺の公式サイトを開設いたしました。行事やご案内をこちらでお知らせしてまいります。"
+    }
+  ],
+  "gallery": [
+    {"image": "/images/hondo.jpg", "title": "本堂", "caption": "富士吉田・上吉田の地に佇む地蔵寺本堂。"},
+    {"image": "/images/honzon.jpg", "title": "延命地蔵菩薩", "caption": "地蔵寺のご本尊、延命地蔵菩薩。"},
+    {"image": "/images/jizo-do.jpg", "title": "境内のお地蔵さま", "caption": "境内で皆さまを見守るお地蔵さま。"},
+    {"image": "/images/keidai.jpg", "title": "境内", "caption": "祈りを受け継ぐ地蔵寺の境内。"}
+  ]
+}

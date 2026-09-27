@@ -1,35 +1,66 @@
 backend:
-  name: turbo-github
-  turbo_site_id: 2a1ee6ce-86d3-4804-a96d-dc79eac00b9c
+  name: github
+  repo: yamanashi-jizouji/yamanashi-jizouji.github.io
   branch: main
-  deploy_status: false
 
 locale: ja
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
+editor:
+  preview: false
+
 collections:
   - name: "site_content"
     label: "地蔵寺ホームページ"
     files:
-      - name: "updates"
-        label: "お知らせ・ギャラリー"
-        file: "content/site.json"
+      - name: "content"
+        label: "お知らせ・ギャラリー管理"
+        file: "data/content.json"
         format: "json"
         fields:
           - label: "お知らせ"
-            name: "notices"
+            name: "news"
             widget: "list"
-            summary: "{{fields.date}}｜{{fields.title}}"
+            label_singular: "お知らせ"
+            summary: "{{fields.date}} ｜ {{fields.title}}"
+            minimize_collapsed: true
+            add_to_top: true
             fields:
-              - { label: "日付", name: "date", widget: "date", format: "YYYY-MM-DD" }
-              - { label: "タイトル", name: "title", widget: "string" }
-              - { label: "本文", name: "body", widget: "text" }
+              - label: "掲載日"
+                name: "date"
+                widget: "datetime"
+                date_format: "YYYY年MM月DD日"
+                time_format: false
+                format: "YYYY-MM-DD"
+                hint: "ホームページに表示する日付です。"
+              - label: "タイトル"
+                name: "title"
+                widget: "string"
+                hint: "例：秋彼岸棚経のお知らせ"
+              - label: "本文"
+                name: "body"
+                widget: "text"
+                hint: "参拝者の方に伝える内容を入力してください。"
+
           - label: "ギャラリー"
             name: "gallery"
             widget: "list"
+            label_singular: "写真"
             summary: "{{fields.title}}"
+            minimize_collapsed: true
             fields:
-              - { label: "写真", name: "image", widget: "image" }
-              - { label: "タイトル", name: "title", widget: "string" }
-              - { label: "説明", name: "description", widget: "text", required: false }
+              - label: "写真"
+                name: "image"
+                widget: "image"
+                choose_url: false
+                hint: "境内・行事などの写真を選択してください。"
+              - label: "写真タイトル"
+                name: "title"
+                widget: "string"
+                hint: "例：本堂、延命地蔵菩薩、境内の風景"
+              - label: "写真の説明"
+                name: "caption"
+                widget: "text"
+                required: false
+                hint: "省略可能です。写真について短く説明できます。"
